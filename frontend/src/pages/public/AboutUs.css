@@ -1,0 +1,56 @@
+.about-page {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+}
+
+.about-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    text-align: center;
+    padding: var(--space-16) var(--space-4);
+}
+
+.about-hero h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-2);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--space-8);
+}
+
+.about-section {
+    background: white;
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-6);
+}
+
+.about-section h2 {
+    color: var(--primary);
+    margin-bottom: var(--space-4);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature h3 {
+    color: var(--primary);
+    margin-bottom: var(--space-2);
+}
+
+.contact-info p {
+    margin-bottom: var(--space-3);
+    color: var(--text-secondary);
+}

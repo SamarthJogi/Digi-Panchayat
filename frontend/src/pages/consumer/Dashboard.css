@@ -1,0 +1,190 @@
+.dashboard {
+    min-height: 100vh;
+    background: var(--bg-secondary);
+}
+
+.dashboard-header {
+    background: rgb(132, 69, 214);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.btn-back {
+    padding: var(--space-2) var(--space-4);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-back:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(-3px);
+}
+
+.btn-logout {
+    padding: var(--space-2) var(--space-4);
+    background: var(--error);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin-left: var(--space-4);
+}
+
+.dashboard-content {
+    padding: var(--space-8);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sections */
+.bills-section, .complaints-section, .connections-section {
+    margin-bottom: var(--space-8);
+}
+
+.bills-section h2, .complaints-section h2, .connections-section h2 {
+    margin-bottom: var(--space-6);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+/* Grids */
+.bills-grid, .complaints-grid, .connections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-6);
+}
+
+/* Cards */
+.bill-card, .complaint-card, .connection-card {
+    background: white;
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s;
+}
+
+.bill-card:hover, .complaint-card:hover, .connection-card:hover {
+    transform: translateY(-2px);
+}
+
+.bill-card h3, .complaint-card h3, .connection-card h3 {
+    margin-bottom: var(--space-4);
+    color: var(--primary);
+    font-size: var(--text-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Details */
+.bill-details p, .complaint-details p, .connection-details p {
+    margin-bottom: var(--space-2);
+    color: black;
+    font-size: var(--text-sm);
+}
+
+.bill-details strong, .complaint-details strong, .connection-details strong {
+    color: black;
+    font-weight: 600;
+}
+
+.bill-details .penalty {
+    color: var(--warning);
+}
+
+.bill-details .total {
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+    margin-top: var(--space-4);
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-2);
+}
+
+/* Status Badges */
+.status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+    border: 1px solid #ffedd5;
+}
+
+.status.paid, .status.resolved, .status.approved {
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #dcfce7;
+}
+
+.status.rejected {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fee2e2;
+}
+
+.status.in_progress {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #dbeafe;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: #333;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.lang-menu div {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.lang-menu div:hover {
+    background-color: #f3f4f6;
+}

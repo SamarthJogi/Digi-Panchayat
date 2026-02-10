@@ -1,0 +1,133 @@
+.navbar {
+    background: white;
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) var(--space-6);
+    min-height: 120px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-12);
+    /* 3rem */
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 15px rgba(100, 108, 255, 0.5));
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.logo h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.common-nav-links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.common-nav-links a {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.common-nav-links a:hover {
+    color: var(--primary-dark);
+}
+
+.btn-nav-login {
+    font-size: 1.7rem !important;
+    padding: var(--space-3) var(--space-6) !important;
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1001;
+    /* Ensure container is above other elements */
+}
+
+.lang-btn {
+    color: #000000 !important;
+    /* Force black text */
+    background: #ffffff !important;
+    /* Force white background */
+    border: 2px solid #d1d5db !important;
+    /* Visible border */
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 150px;
+    justify-content: space-between;
+    transition: all 0.2s;
+}
+
+.lang-btn:hover {
+    background: #f3f4f6 !important;
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    /* Position directly below button */
+    right: 0;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin-top: 5px;
+    min-width: 150px;
+    z-index: 1002;
+    /* Ensure menu is on top of everything */
+    overflow: hidden;
+}
+
+.lang-menu div {
+    padding: var(--space-3) var(--space-4);
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.4rem;
+    color: #000000 !important;
+    /* Force black text */
+    background: white;
+}
+
+.lang-menu div:hover {
+    background: #e5e7eb;
+    color: #000000;
+}
+
+.btn-logout-nav,
+.btn-logout-nav:hover {
+    color: white !important;
+}

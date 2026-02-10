@@ -1,0 +1,265 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.navbar {
+    background: white;
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4) var(--space-6);
+    /* Ensure height accommodates larger logo */
+    min-height: 120px;
+    max-width: 100%;
+    /* Override global container limit */
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+    /* Increased gap for better spacing */
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 15px rgba(100, 108, 255, 0.5));
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.logo h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 2.2rem;
+    /* Increased from 1.5rem (approx +50%) */
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-8);
+    /* Increased gap */
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 1.7rem;
+    /* Increased from 1.15rem (+50%) */
+    font-weight: 600;
+}
+
+.nav-links button {
+    font-size: 1.7rem;
+    /* matched font size */
+    padding: var(--space-3) var(--space-6);
+    /* slightly larger padding */
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.lang-btn {
+    background: white;
+    border: 1px solid var(--border);
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 140px;
+    justify-content: space-between;
+    color: black;
+}
+
+.lang-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #f3f4f6;
+    /* Light grey background */
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    margin-top: 5px;
+    min-width: 140px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.lang-menu div {
+    padding: var(--space-3) var(--space-4);
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.4rem;
+    color: black;
+    /* Black text */
+}
+
+.lang-menu div:hover {
+    background: #e5e7eb;
+    /* Slightly darker grey on hover */
+    color: black;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    text-align: center;
+    margin-top: var(--header-height);
+}
+
+.hero-title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-8);
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.btn-hero {
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+    background: white;
+    color: var(--primary);
+    border: none;
+    border-radius: var(--radius-xl);
+    font-weight: var(--font-semibold);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-xl);
+}
+
+.scroll-down {
+    margin-top: var(--space-8);
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.scroll-down:hover {
+    opacity: 1;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.services {
+    padding: 10rem 0;
+    /* Increased padding */
+}
+
+.services h2 {
+    text-align: center;
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-12);
+    color: var(--primary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+}
+
+.service-card {
+    padding: var(--space-6);
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border: 2px solid var(--primary);
+    /* Add border on hover */
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: var(--space-2);
+}
+
+.service-card p {
+    color: var(--text-secondary);
+}
+
+.footer {
+    background: var(--bg-secondary);
+    padding: var(--space-4) 0;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

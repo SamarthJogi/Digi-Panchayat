@@ -1,0 +1,142 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.auth-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    margin-top: 120px;
+    /* Space for fixed navbar */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-card {
+    background: var(--bg-primary);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: var(--space-6);
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: var(--space-4);
+}
+
+.login-card .form-group label {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: #ffffff !important;
+    font-weight: var(--font-medium);
+}
+
+.form-group input {
+    width: 100%;
+    padding: var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.btn {
+    /* width: 100%; Removed to fix navbar button */
+    padding: var(--space-3) var(--space-4);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.login-card .btn {
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.form-actions {
+    display: flex;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.form-actions .btn {
+    width: auto;
+    flex: 1;
+}
+
+.otp-sent-message {
+    padding: var(--space-3);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-4);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.message {
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    text-align: center;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: var(--success);
+}
+
+.message.error {
+    background: #fee2e2;
+    color: var(--error);
+}
+
+.register-link {
+    margin-top: var(--space-4);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.register-link a {
+    color: var(--primary);
+    font-weight: var(--font-medium);
+}
