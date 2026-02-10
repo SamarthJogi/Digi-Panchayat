@@ -1,0 +1,71 @@
+{
+    "nav": {
+        "home": "मुख्यपृष्ठ",
+        "services": "सेवा",
+        "about": "आमच्याबद्दल",
+        "gallery": "गॅलरी",
+        "contact": "संपर्क",
+        "login": "लॉगिन",
+        "register": "नोंदणी",
+        "dashboard": "डॅशबोर्ड",
+        "logout": "लॉगआउट"
+    },
+    "hero": {
+        "title": "डिजी-पंचायतमध्ये आपले स्वागत आहे",
+        "subtitle": "आधुनिक गावांसाठी डिजिटल शासन",
+        "cta": "सुरू करा"
+    },
+    "services": {
+        "title": "आमच्या सेवा",
+        "waterBilling": "पाणी बिलिंग",
+        "propertyTax": "मालमत्ता कर",
+        "complaints": "तक्रार नोंदवा",
+        "newConnection": "नवीन कनेक्शन"
+    },
+    "auth": {
+        "login": "लॉगिन",
+        "register": "नोंदणी",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "name": "नाव",
+        "phone": "फोन नंबर",
+        "address": "पत्ता",
+        "sendOTP": "OTP पाठवा",
+        "verifyOTP": "OTP सत्यापित करा",
+        "otpCode": "OTP कोड",
+        "submit": "सबमिट"
+    },
+    "dashboard": {
+        "welcome": "स्वागत आहे",
+        "pendingBills": "प्रलंबित बिले",
+        "complaints": "माझ्या तक्रारी",
+        "connections": "कनेक्शन विनंत्या",
+        "viewBills": "बील पहा",
+        "payBills": "बिल भरा",
+        "registerComplaint": "तक्रार नोंदवा"
+    },
+    "bills": {
+        "waterBill": "पाणी बिल",
+        "propertyTax": "मालमत्ता कर",
+        "billNumber": "बिल क्रमांक",
+        "billDate": "बिल तारीख",
+        "dueDate": "देय तारीख",
+        "baseAmount": "मूळ रक्कम",
+        "penaltyAmount": "दंड रक्कम",
+        "totalAmount": "एकूण रक्कम",
+        "monthsDelayed": "विलंबित महिने",
+        "status": "स्थिती",
+        "payNow": "आता भरा"
+    },
+    "common": {
+        "loading": "लोड होत आहे...",
+        "error": "त्रुटी",
+        "success": "यश",
+        "cancel": "रद्द करा",
+        "save": "जतन करा",
+        "edit": "संपादित करा",
+        "delete": "हटवा",
+        "back": "मागे",
+        "next": "पुढे"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "nav": {
+        "home": "होम",
+        "services": "सेवाएं",
+        "about": "हमारे बारे में",
+        "gallery": "गैलरी",
+        "contact": "संपर्क",
+        "login": "लॉगिन",
+        "register": "रजिस्टर",
+        "dashboard": "डैशबोर्ड",
+        "logout": "लॉगआउट"
+    },
+    "hero": {
+        "title": "डिजी-पंचायत में आपका स्वागत है",
+        "subtitle": "आधुनिक गांवों के लिए डिजिटल शासन",
+        "cta": "शुरू करें"
+    },
+    "services": {
+        "title": "हमारी सेवाएं",
+        "waterBilling": "जल बिलिंग",
+        "propertyTax": "संपत्ति कर",
+        "complaints": "शिकायत दर्ज करें",
+        "newConnection": "नया कनेक्शन"
+    },
+    "auth": {
+        "login": "लॉगिन",
+        "register": "रजिस्टर",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "name": "नाम",
+        "phone": "फोन नंबर",
+        "address": "पता",
+        "sendOTP": "OTP भेजें",
+        "verifyOTP": "OTP सत्यापित करें",
+        "otpCode": "OTP कोड",
+        "submit": "सबमिट"
+    },
+    "dashboard": {
+        "welcome": "स्वागत है",
+        "pendingBills": "लंबित बिल",
+        "complaints": "मेरी शिकायतें",
+        "connections": "कनेक्शन अनुरोध",
+        "viewBills": "बिल देखें",
+        "payBills": "बिल भुगतान",
+        "registerComplaint": "शिकायत दर्ज करें"
+    },
+    "bills": {
+        "waterBill": "जल बिल",
+        "propertyTax": "संपत्ति कर",
+        "billNumber": "बिल नंबर",
+        "billDate": "बिल तारीख",
+        "dueDate": "देय तिथि",
+        "baseAmount": "मूल राशि",
+        "penaltyAmount": "जुर्माना राशि",
+        "totalAmount": "कुल राशि",
+        "monthsDelayed": "विलंबित महीने",
+        "status": "स्थिति",
+        "payNow": "अभी भुगतान करें"
+    },
+    "common": {
+        "loading": "लोड हो रहा है...",
+        "error": "त्रुटि",
+        "success": "सफलता",
+        "cancel": "रद्द करें",
+        "save": "सहेजें",
+        "edit": "संपादित करें",
+        "delete": "मिटाएं",
+        "back": "वापस",
+        "next": "आगे"
+    }
+}

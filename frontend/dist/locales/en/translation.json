@@ -1,0 +1,71 @@
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "login": "Login",
+        "register": "Register",
+        "dashboard": "Dashboard",
+        "logout": "Logout"
+    },
+    "hero": {
+        "title": "Welcome to Digi-Panchayat",
+        "subtitle": "Digital Governance for Modern Villages",
+        "cta": "Get Started"
+    },
+    "services": {
+        "title": "Our Services",
+        "waterBilling": "Water Billing",
+        "propertyTax": "Property Tax",
+        "complaints": "Register Complaints",
+        "newConnection": "New Connections"
+    },
+    "auth": {
+        "login": "Login",
+        "register": "Register",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "phone": "Phone Number",
+        "address": "Address",
+        "sendOTP": "Send OTP",
+        "verifyOTP": "Verify OTP",
+        "otpCode": "OTP Code",
+        "submit": "Submit"
+    },
+    "dashboard": {
+        "welcome": "Welcome",
+        "pendingBills": "Pending Bills",
+        "complaints": "My Complaints",
+        "connections": "Connection Requests",
+        "viewBills": "View Bills",
+        "payBills": "Pay Bills",
+        "registerComplaint": "Register Complaint"
+    },
+    "bills": {
+        "waterBill": "Water Bill",
+        "propertyTax": "Property Tax",
+        "billNumber": "Bill Number",
+        "billDate": "Bill Date",
+        "dueDate": "Due Date",
+        "baseAmount": "Base Amount",
+        "penaltyAmount": "Penalty Amount",
+        "totalAmount": "Total Amount",
+        "monthsDelayed": "Months Delayed",
+        "status": "Status",
+        "payNow": "Pay Now"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "back": "Back",
+        "next": "Next"
+    }
+}
